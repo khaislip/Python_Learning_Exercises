@@ -22,11 +22,11 @@ with open ('normalized_inputFile2_final.txt', 'w') as outputFile2_final:
 
 #opens normalized inputFile1 to compare
 with open('normalized_inputFile1_final.txt') as file1list:
-	file1l = file1list.read().splitlines()
+ file1l = file1list.read().splitlines()
 
 #opens normalized inputFile2 to compare
 with open('normalized_inputFile2_final.txt') as file2list:
-	file2l = file2list.read().splitlines()
+ file2l = file2list.read().splitlines()
 
 #assigns files to sets
 set1=file1l
@@ -34,7 +34,7 @@ set2=file2l
 
 #Prints everything in set b that's not in set a
 def difference(a, b):
-	return list(set(b).difference(set(a)))
+ return list(set(b).difference(set(a)))
 
 list_diff=difference(set1,set2)
 
